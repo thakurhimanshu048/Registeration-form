@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.addition-content{
+			width: 100%;
+		}
+		.login-form-container{
+			margin-top: 50px;
+		}
+		.col-md-8, .col-md-4{
+			background: rgb(103,146,103);
+			background: radial-gradient(circle, rgba(103,146,103,0.8379726890756303) 0%, rgba(4,90,102,1) 0%);
+			color: white;
+		}
+		.logo-img img{
+			width: 100%;
+		}
+		.logo-img{
+			margin: 15px 0px 15px 0px;
+		}
+		.traineesInfo{
+			color: white;
+			font-size: 15px;
+			margin-top: 34px;
+			margin-bottom: 39px;
+		}
+		.traineesInfo a{
+			color: red;
+		}
+		.traineesInfo a:hover{
+			color: blue;
+			text-decoration: none;
+		}
+		mark{
+			background-color: #8F9779;
+			padding: 10px;
+			border-radius: 1vw;
+		}
+		h2{
+		  background: #ffffff;
+		  -webkit-background-clip: text;
+		  background-clip: text;
+		  color: transparent;
+		  font-family: 'Times New Roman';
+		  font-weight: bold;
+  		}
+  		@media only screen and (max-width: 1024px){
+  			.logo-img{
+  				padding: 33px 0px 33px 0px;
+  			}
+  		}
+		@media only screen and (max-width: 980px){
+			.col-md-8{
+				width: 100%;
+			}
+  		}
+  		@media only screen and (max-width: 768px){
+  			.logo-img{
+  				padding: 0px;
+  			}
+  			.logo-img img{
+  				width: 60%;
+  				height: auto;
+  			}
+  			.col-md-8{
+  				width: 100%;
+  			}
+  		}
+  		@media only screen and (max-width: 425px){
+  			.traineesInfo{
+  				font-size: 12px;
+  			}
+			 .col-md-8{
+  				width: 100%;
+  			}
+  		}
+  		@media only screen and (max-width: 320px){
+  			.traineesInfo{
+  				font-size: 8px;
+  			}
+			 .col-md-8{
+  				width: 100%;
+  			}
+  		}  				
+	</style>
+</head>
+<body oncontextmenu="return false">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<center>
+					<div class="img-thumbnail logo-img">
+						<img src="msde-logo.png">
+					</div>
+				</center>
+			</div>		
+			<div class="col-md-8 img-thumbnail">
+				<div class="container-fluid">
+					<center><h2>Login Form</h2></center>
+					<form class="form login-form-container">
+						<div class="form-row">
+							<div class="form-group">
+								<label for="email">Email </label>
+								<input type="email" id="email" class="form-control" name="userEmail" placeholder="Email ..." required="true">
+							</div>						
+						</div>
+						<div  class="form-row">
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="password" id="password" class="form-control" name="password" placeholder="Password" required="true">
+							</div>
+						</div>
+						<div  class="form-row">
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary">Sign In</button>
+							</div>
+						</div>
+					</form>
+					<div class="traineesInfo">
+						<mark><span style="color: yellow;">Students/Trainees</span> <a href="reg.html">click here</a> <span style="color: white;">for registeration :)</span></mark>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

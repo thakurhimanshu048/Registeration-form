@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NSTI BANGLORE</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.admin-card{
+			text-align: center;
+			background: rgb(103,146,103);
+			background: radial-gradient(circle, rgba(103,146,103,0.8379726890756303) 0%, rgba(27,171,222,1) 0%);
+			/*border: 3px inset ;*/
+			box-shadow: 8px 9px 5px rgba(169,186,157,100);
+			width: 40rem;
+		}
+		.trainees-card{
+			text-align: center;
+			background-color: #11b1a4;
+			box-shadow: 8px 9px 5px rgba(169,186,157,100);
+			width: 40rem;
+		}
+		.card img{
+			width: 100%;
+		}
+		.card-body{
+			color: white;
+			font-size: 18px;
+			margin: 50px;
+		}
+		@media only screen and (max-width: 990px){
+			.card{
+				width: 32rem;
+			}
+			.col-md-6{
+				width: 50%;
+				float: left;
+			}
+		}
+		@media only screen and (max-width: 702px){
+			.admin-card{
+				height: 63vw; 
+			}
+			.trainees-card{
+				height: 63vw;
+			}
+		}
+		@media only screen and (max-width: 600px){
+			.admin-card, .trainees-card{
+				height: auto;
+			}
+			.trainees-card{
+				margin-top: 20px;
+			}
+			.col-md-6{
+/* 				border: 2px ridge red; */
+				float: none;
+				width: 97%;
+			}
+			.card{
+				width: 100%;
+			}
+		}
+		.form-links{
+			color: #030063;
+			font-weight: bold;
+			font-size: 16px;
+		}
+		.form-links a{
+			color: #030063;
+			opacity: .5;
+			letter-spacing: 1px;
+			font-size: 16px;
+			font-family: 'Times New Roman';
+			font-weight: bold;
+		}
+		.form-links a:hover{
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 16px;
+			color: #030063;
+			opacity: 1;
+			font-family: 'Times New Roman';
+		}
+		.card-heading1{
+			font-family: 'Times New Roman';
+			font-size: 22px;
+			font-style: italic;
+			text-shadow: 0px 4px 3px blue,
+						-1px -4px 3px red,
+						1px 0px 2px orange;
+			padding-bottom: 20px;
+		}
+		.card-heading2{
+			font-family: 'Times New Roman';
+			font-size: 22px;
+			font-style: italic;
+			color: white;
+			text-shadow: 0px 4px 2px blue,
+						-1px -4px 1px teal;
+			padding-bottom: 20px;
+		}
+		.box-with-text {
+		  background-image: -webkit-linear-gradient(#240063 50%, white 50%);
+		  background-repeat: repeat;
+		  background-position: 0 0;
+		  background-size: 100% 50px;
+		  -webkit-text-fill-color: transparent;
+		  -webkit-background-clip: text;
+		  -webkit-animation: stripes 2s linear infinite;
+		  animation: stripes 2s linear infinite;
+		}
+		.box-with-text a{
+		  background-image: -webkit-linear-gradient(#240063 50%, white 50%);
+		  background-repeat: repeat;
+		  background-position: 0 0;
+		  background-size: 100% 50px;
+		  -webkit-text-fill-color: transparent;
+		  -webkit-background-clip: text;
+		  -webkit-animation: stripes 2s linear infinite;
+		  animation: stripes 2s linear infinite;
+		}
+
+		@-webkit-keyframes stripes {
+		  100% {
+		    background-position: 0 -50px;
+		  }
+		}
+	</style>
+</head>
+<body oncontextmenu="return false">
+	<div class="container">
+		<center>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card img-thumbnail admin-card" style="">
+					<img class="card-img-top" src="admin-profile.gif" alt="ADMIN TEMP IMAGES">
+					<div class="card-body">
+						<div class="card-heading1">This is for Admin Panel.<span style='font-size:14px;'>&#127757;</span></div>
+						<div class="form-links box-with-text">Click <a href="login.html">here...</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card img-thumbnail trainees-card" style="">
+					<img class="card-img-top" src="trainees profile.gif" alt="TRAINEES TEMP IMAGES">
+					<div class="card-body">
+						<div class="card-heading2">This is for Trainees Panel.<span style='font-size:16px;'>&#128435;</span></div>
+						<div class="form-links box-with-text">Register <a href="reg.html">here...</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</center>
+	</div>
+</body>
+</html>

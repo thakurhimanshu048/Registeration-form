@@ -1,0 +1,4 @@
+application:
+- name: PhpApP
+  memory: 255M
+  buildpack: php_buildpack

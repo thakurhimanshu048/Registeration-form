@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	body{
+
+   	}
+  	.border-container{
+  		border: 2px double gray;
+  	}
+  	.reg-form{
+  		padding: 30px 5px 10px 5px;
+  	}
+  	.body-content{
+  /*		background: rgb(174,238,224);*/
+		background: linear-gradient(90deg, rgba(174,238,224,1) 0%, rgba(0,128,128,1) 65%);
+		color: white;
+		font-family: 'Times New Roman';
+  	}
+  	#carouselImg{
+  		width: 100%;
+  		height: 24vw;
+  	}
+  	h2{
+		  background: #00eeff; /* fallback for old browsers */
+		  background: -webkit-linear-gradient(to right, #00eeff, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+		  background: linear-gradient(to right, #00eeff, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		  -webkit-background-clip: text;
+		  background-clip: text;
+		  color: transparent;
+		  font-family: 'Times New Roman';
+		  font-weight: bold;
+  	}
+  	.col-sm-7{
+  		margin-top: 15px;
+  	}
+  	.gender-section label, input{
+  		padding: 0px 5px 0px 85px;
+  		font-size: 16px;
+  	}
+  	.gender-section input[type=radio]{
+  		border: 0px;
+  		width: 10%;
+  		height: 1.5vw;
+  	}
+  	header{
+  		font-size: 16px;
+  		font-weight: bold;
+  	}
+  	@media only screen and (max-width: 1024px){
+  		#carouselImg{
+  			height: 32vw;
+  		}
+  	}
+  	@media only screen and (max-width: 768px){
+  		.col-sm-7{
+  			width: 100%;
+  		}
+  		.col-sm-5{
+  			width: 100%;
+  		}
+  		.body-content{
+  			background: linear-gradient(90deg, rgba(174,238,224,1) 0%, rgba(0,128,128,1) 0%);
+  		}
+	  	.gender-section input[type=radio]{
+	  		border: 0px;
+	  		width: 10%;
+	  		height: 3vw;
+	  	}
+  	}
+  	@media only screen and (max-width: 425px){
+  		#carouselImg{
+  			height: 45vw;
+  		}
+  	}
+  </style>
+</head>
+<body oncontextmenu="return false">
+	<div class="container border-container">
+		<div class="row body-content">
+			<div class="col-sm-7">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				    <!-- Indicators -->
+				    <ol class="carousel-indicators">
+				      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				      <li data-target="#myCarousel" data-slide-to="1"></li>
+				      <li data-target="#myCarousel" data-slide-to="2"></li>
+				    </ol>
+
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner img-thumbnail">
+				      <div class="item active">
+				        <img src="fti1.jpeg" id="carouselImg" alt="NSTI Banglore">
+				      </div>
+
+				      <div class="item">
+				        <img src="fti2.jpeg" id="carouselImg" alt="FTI Banglore">
+				      </div>
+				    
+				      <div class="item">
+				        <img src="fti3.jpeg" id="carouselImg" alt="NSTI Banglore">
+				      </div>
+			  		</div>
+			 	</div>
+			</div>
+			<div class="col-sm-5">
+				<div>
+					<center><h2>Registration Form</h2></center>
+				</div>
+				<div class="reg-form">
+					<form>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="fname">First Name : </label>
+								<input type="text" id="fname" class="form-control" name="" placeholder="First Name" required>
+							</div>
+							<div class="form-group col-md-6">
+								<label for="lname">Last Name : </label>
+								<input type="text" id="lname" class="form-control" name="" placeholder="Last Name" required>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="email">Email : </label>
+								<input type="email" id="email" class="form-control" name="" placeholder="Email Address" required>
+							</div>
+							<div class="form-group col-md-6">
+								<label for="phno">Phone Number : </label>
+								<input type="tel" pattern="[0-9]{10}" id="phno" class="form-control" name="" placeholder="Phone Number" required>
+							</div>
+						</div>
+						<!-- <div class="form-row">		 -->
+							<div class="form-group col-md-12">
+								<label for="course">Course : </label>
+								<select name="" id="course" class="form-control" required>
+									<option value="">Select Course</option>
+									<option value="">ADIT</option>
+									<option value="">DIPLOMA</option>
+									<option value="">CITS</option>
+								</select>
+							</div>
+						<!-- </div> -->
+						<div class="form-row">
+							<div class="form-group col-md-12 gender-section">
+								<header>Gender : </header>
+								<label for="male">Male</label>
+								<input type="radio" id="male" name="gender" value="male" checked="true" required="true">
+								<label for="female">Female</label>
+								<input type="radio" id="female"  name="gender" value="female" required="true">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-12">
+								<button type="Submit" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
